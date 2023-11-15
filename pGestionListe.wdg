@@ -1,0 +1,299 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pGestionListe
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x18c519f1002386c9
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAACNJJaKiIvyJBT6y6tg2SQhZFltIwNu0osp2KgV+lVJ56DMPtmewqmD8Og8066ks5kUE4t9oggJJbpI4R8xIwEwHIDoPUVevNNu1VCRNxjB0DSS94K6+V3BcjrG2Ji9AXjei7ViqTwxn6TnB+gyzmg5/ZfT0TwmyAyJcgSe36WHqT5p7csiWQ==
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      CONSTANTE
+      	APPLICATION_IMAGE = 1
+      	APPLICATION_VIDEO = 2
+      	APPLICATION_AUDIO = 3
+      FIN
+     type : 720896
+  procedures :
+   -
+     name : EcritRegistreSiNecessaire
+     internal_properties : CAAAAAgAAAA4sOoNd58ps855nCIzosdkM17ZD5NliKdU5Ho23ZvsPQ7+PsZfapKiouCzdMgzIWe4WceSv7WX5rd6HL4CMnhuz7NMaYKtW+M8i7s73VuRneSX3PeX2s9cLoPuzE+oagsJ6Pdd1tnF/jDjnpn4Mrngd91RGLaPKlEYheSqQcFHPj2Xx1VWS7ShdRocPBGdpBy495pDpmIQRieGnDq9GCI2hP2zZr7b
+     procedure_id : 1784862101821797039
+     type_code : 15
+     code : |1-
+      PROCEDURE PRIVEE EcritRegistreSiNecessaire(sBranche,sCle,sValeur)
+      
+      // Variables
+      bExecuter       est un booléen
+      sValeurActuelle est une chaîne
+      
+      //lecture de la valeur actuelle
+      sValeurActuelle=RegistreLit(sBranche,sCle,bExecuter) 
+      
+      //valeur actuelle OK ou maj de la valeur OK
+      SI (bExecuter _ET_ sValeurActuelle=sValeur) _OU_  ((RegistreExiste(sBranche)  _OU_ RegistreCréeClé(sBranche)) _ET_ RegistreEcrit(sBranche,sCle,sValeur)) ALORS
+      	RENVOYER Vrai
+      SINON
+      	ErreurPropage(<§@18c519d3002111c80000§>+RC)
+      	RENVOYER Faux
+      FIN
+     type : 458752
+   -
+     name : SupprimerApplication
+     internal_properties : CAAAAAgAAADKJdag9JaYEcjYV2GmJHs+eQYeSnYxvea6HBRBMYoKmwxJ67oJdBDpouoWGC5Yqe6qkgbDlggVM7IOfQacjhQh2ZoIDAjIP85gaPITm2Cv1BX6anwMQe6Naxgjg94Dkzp6Sepak1QYU0fyjS73FypXcDZMPct8J7yn7Lu3vGzcUaFD+7m6FXxZB6QGDoMHkjByZPf2KaI=
+     procedure_id : 1784922166941817102
+     type_code : 15
+     code : |1-
+      // Résumé : Supprime une application de la base de registre
+      // Syntaxe :
+      //[ <Résultat> = ] SupprimerApplication (<sNomApp> est chaîne)
+      //
+      // Paramètres :
+      //	sNomApp (chaîne) : Nom de l'application
+      // Valeur de retour :
+      // 	booléen : // Vrai si OK, sinon Faux
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      Procédure SupprimerApplication(sNomApp est une chaine)
+      
+      // Suppression de l'application
+      SI PAS SupprimeRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlers\ShowPicturesOnArrival\",sNomApp) _OU_
+      PAS SupprimeRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlers\PlayVideoFilesOnArrival\",sNomApp) _OU_
+      PAS SupprimeRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlers\PlayMusicFilesOnArrival\",sNomApp) _OU_
+      PAS SupprimeRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\"+sNomApp+"\","Action")  _OU_ 
+      PAS SupprimeRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\"+sNomApp+"\","DefaultIcon") _OU_ 
+      PAS SupprimeRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\"+sNomApp+"\","Provider") _OU_ 
+      PAS SupprimeRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\"+sNomApp+"\","InvokeProgID") _OU_ 
+      PAS SupprimeRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\"+sNomApp+"\","InvokeVerb") ALORS
+      	RENVOYER Faux
+      SINON
+      	RegistreSupprimeClé("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\"+sNomApp+"\")
+      	RENVOYER Vrai
+      FIN
+     type : 458752
+   -
+     name : AjouterApplication
+     internal_properties : CAAAAAgAAAAUbxBmMsjvydqa9y1KNpui70SMnMJjDZ4I8mwVrfTSw3Zb0cwxipAVwIhq8D6W1S7k3NTlTl4Nw5BchR5MnIQlR7AKujyyzzKm3vpcrk+w22hlw0s3eCWyTiOOgAXWSGWFXGM5DsOXUFLFsMfWMltGf8VJgIrX0mkSxzboZ9N55KBiHJA5uOdSPlP1w2YuX3aoHjk07+Q=
+     procedure_id : 1785163831865847263
+     type_code : 15
+     code : |1+
+      // Résumé : Ajoute une application dans la base de registre
+      // Syntaxe :
+      //[ <Résultat> = ] AjouterApplication (<sNomCompletApplication> est chaîne, <sLibelle> est chaîne, <TypeApp> [, <sCommande> est chaîne])
+      //
+      // Paramètres :
+      //	sNomCompletApplication (chaîne) : Nom complet de l'application
+      //	sLibelle (chaîne) : Libellé à afficher
+      // 	TypeApp : Type d'application
+      //	sCommande (chaîne - valeur par défaut="%1") : Ligne de commande de l'application
+      // Valeur de retour :
+      // 	booléen : // Vrai si OK, sinon Faux
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE AjouterApplication(sNomCompletApplication est une chaine, sLibelle est une chaine, TypeApp, sCommande est une chaine="%1")
+      
+      // Variable
+      sNomApp est une chaine
+      bRetour est un booléen = Faux
+      
+      // Initialisation
+      sNomApp = fExtraitChemin(sNomCompletApplication,fFichier)
+      
+      // Initialisation
+      SELON TypeApp
+      	CAS APPLICATION_AUDIO:
+      		bRetour = EcritRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlers\PlayMusicFilesOnArrival",sNomApp,"")
+      	CAS APPLICATION_IMAGE:
+      		bRetour = EcritRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlers\ShowPicturesOnArrival",sNomApp,"")
+      	CAS APPLICATION_VIDEO:
+      		bRetour = EcritRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlers\PlayVideoFilesOnArrival",sNomApp,"")	
+      FIN
+      
+      SI PAS bRetour ALORS
+      	RENVOYER FAUX
+      FIN
+      
+      SI PAS EcritRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\"+sNomApp,"Action",sLibelle)  _OU_ 
+      PAS EcritRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\"+sNomApp,"DefaultIcon",sNomCompletApplication) _OU_ 
+      PAS EcritRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\"+sNomApp,"Provider",sNomApp) _OU_ 
+      PAS EcritRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\"+sNomApp,"InvokeProgID",sNomApp) _OU_ 
+      PAS EcritRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\"+sNomApp,"InvokeVerb","open") _OU_
+      PAS EcritRegistreSiNecessaire("HKEY_LOCAL_MACHINE\SOFTWARE\Classes\"+sNomApp+"\shell\open\command","",sNomCompletApplication+" "+sCommande) _OU_
+      PAS EcritRegistreSiNecessaire("HKEY_CLASSES_ROOT\"+sNomApp+"\shell\open\command","",sNomCompletApplication+" "+sCommande) ALORS
+      	RENVOYER Faux
+      SINON			
+      	RENVOYER Vrai
+      FIN
+      
+     type : 458752
+   -
+     name : SupprimeRegistreSiNecessaire
+     internal_properties : CAAAAAgAAAAWYRKhYMz4ObbGC80q2pveG5C8nDpfIT78xjilzViql8JP4WRZPlRdXDR2EFYC5cogkGwl3rJ5k+wISY5UUPQ5I5waOiS2M8q60h6qdI3mlSarAe2Fzlt4NJmkZvvEHn+Laokr3JE95jijvl0EOHFQ7aunKqCVMFcAvZzuDRH/Nr4QMrr3lr0YzLnbIQSEBd371Tsy7eY=
+     procedure_id : 1785234277922861814
+     type_code : 15
+     code : |1+
+      // Résumé : Supprime un registre si nécessaire
+      // Syntaxe :
+      //[ <Résultat> = ] SupprimeRegistreSiNecessaire (<sRegistre> est chaîne, <sClée> est chaîne)
+      //
+      // Paramètres :
+      //	sRegistre (chaîne) : Registre
+      //	sClée (chaîne) : Clef
+      // Valeur de retour :
+      // 	booléen : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      //	sRegistre (chaîne) : <indiquez ici le rôle de sRegistre>
+      Procédure PRIVEE SupprimeRegistreSiNecessaire(sRegistre est une chaine, sClée est une chaine)
+      
+      // Variable
+      bExiste est un booléen
+      
+      // Initialisation
+      RegistreLit(sRegistre,sClée,bExiste)
+      
+      // Si la clée existe, elle est supprimée
+      SI bExiste ALORS
+      	RENVOYER  RegistreSupprimeValeur(sRegistre,sClée)
+      SINON
+      	RENVOYER Vrai
+      FIN
+      
+     type : 458752
+   -
+     name : RécupérerListeApplication
+     procedure_id : 1800781939269742435
+     type_code : 15
+     code : |1-
+      // Résumé : Récupère la liste des applications paramétrés, du type d'application passé en paramètre
+      // Syntaxe :
+      //[ <Résultat> = ] RécupérerListeApplication (<TypeApplication>)
+      //
+      // Paramètres :
+      // 	TypeApplication : <indiquez ici le rôle de TypeApplication>
+      // Valeur de retour :
+      // 	chaîne : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      Procédure RécupérerListeApplication(TypeApplication)
+      
+      // Variables
+      sListe       est une chaine
+      sListeFinale est une chaine
+      sValeur      est une chaine
+      
+      // Initialisation
+      SELON TypeApplication
+      	CAS APPLICATION_AUDIO:
+      		sListe = RegistreListeValeur("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlers\PlayMusicFilesOnArrival",Faux)
+      	CAS APPLICATION_IMAGE:
+      		sListe = RegistreListeValeur("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlers\ShowPicturesOnArrival",Faux)
+      	CAS APPLICATION_VIDEO:
+      		sListe = RegistreListeValeur("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlers\PlayVideoFilesOnArrival",Faux)	
+      FIN
+      
+      // Suppression des programmes Windows par defaut de la liste
+      POUR TOUTE CHAINE sValeur DE sListe SEPAREE PAR RC
+      	Si PAS(sValeur [= "MS") ALORS
+      		sListeFinale += [RC] + sValeur	
+      	FIN
+      FIN
+      
+      RENVOYER sListeFinale	
+     type : 458752
+   -
+     name : RécupérerAppChemin
+     procedure_id : 1800820495191354678
+     type_code : 15
+     code : |1-
+      // Résumé : Récupère le chemin d'une application
+      // Syntaxe :
+      //[ <Résultat> = ] RécupérerAppChemin (<sNomApplication> est chaîne)
+      //
+      // Paramètres :
+      //	sNomApplication (chaîne) : Nom de l'application
+      // Valeur de retour :
+      // 	chaîne : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      Procédure RécupérerAppChemin(sNomApplication est une chaine)
+      
+      // Variables
+      ResLecture est une chaine
+      ResExécute est un  booléen
+      
+      // Lecture du chemin
+      ResLecture = RegistreLit("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\"+sNomApplication,"DefaultIcon", ResExécute)
+      
+      RENVOYER ResLecture
+     type : 458752
+   -
+     name : CheminFormate
+     procedure_id : 2265846143450528372
+     type_code : 15
+     code : |1+
+      // Résumé : Formate le chemin (enlever la ligne de commande etc.)
+      // Syntaxe :
+      //[ <Résultat> = ] CheminFormate (<sChemin>)
+      //
+      // Paramètres :
+      //	sChemin : Chaine chemin
+      // Valeur de retour :
+      // 	chaîne ANSI : // 	Aucune
+      //
+      PROCEDURE CheminFormate(LOCAL sChemin)
+      
+      // Variable
+      sCheminFinal est une chaine
+      nPosition    est un entier
+      
+      sChemin = Remplace(sChemin,"\\","\")
+      
+      // Y a t-il des guillemets ?
+      Si ChaîneOccurrence(sChemin,"""") =2 ALORS
+      	nPosition = Position(sChemin,"""",0,DepuisFin)
+      	SI sChemin [= """" ALORS
+      		sCheminFinal = sChemin[[2 A nPosition-1]]
+      	FIN
+      SINOn
+      	sCheminFinal = sChemin
+      FIN
+      
+      RENVOYER sCheminFinal
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x18c519d3002111c8
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : "Impossible de mettre à jour les informations du système. Cette opération nécessite une exécution en tant qu'ADMINISTRATEUR. Relancer l'application en tant qu'administrateur (clic droit sur l'exécutable et dans le menu contextuel choisir 'Exécuter en tant que' sous Windows XP et 'Exécuter en tant qu'Administrateur' sous Windows Vista). "
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

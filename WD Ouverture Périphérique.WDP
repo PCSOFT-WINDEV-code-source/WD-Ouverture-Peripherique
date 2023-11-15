@@ -1,0 +1,116 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD Ouverture Périphérique
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : Le projet a pour but de montrer comment il est possible d'ajouter une application dans la liste des applications proposées lors du branchement d'un périphérique.
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : WD Ouverture Périphérique
+    internal_properties : CAAAAAgAAABTJH0DLrvicQue8RVe7tern1N6JYkGDfjOw90eXn85cppBK2lugdmaOa63a3sZdSLokndL7sEbb07Q9IBauu5Cc5n2IdLp69pBe6BZfzzhMJMZetxQz0sZne74PGrFAX+ir7dxxvBHIZUlac+Qr4D5zOhUQi+qPaX97WA2/9T0W1lpY/5DU7UXUqljqHNnpZOaPwCotp9SGeK1oC/n9nlaK84dQmsB/1Jrnz3XUz54a+gNGZhAQTJGh4Coh2D3qhkD4/spIfAPx4NkPpqRxKr5dNU/o4tdBw2S/bL4lzufeYPyWG40KKYf9j3xzEizSdKA2W4xq9TrMtLonkL4TAllL3xmzoEaiBNtrSRo6mPY/Mjip8OuG6JjBHPV27gptRajG7kkvjvW6F5giNIe/u8sB5pPe+U7KILrxhYrbhPVwCs9tqpDCh59ytc0tM2HKaIaX6YtLyFxQFwiWpitA25dSIOXMW0bI4vcTnXw8CI1cRG7SL7TiUlfyX8XLY8NQGv/16E1V2yFs4oTPDE/YiJQmHWWOpSGDck5U6LI82cES6LmlntyfaJ+aijVM9vpFxsl/Vv1/QKrAL6NBb3zDe7ZgRKs17kNKaiJYjfrfQc5vcESjp4wf0llesU0iUB2+GN6+NPQX5RJrqIx9NJdg9hYQb4LvowI7IgA6F+0cU74Lw6sUkhak2iDA8cavYV3HaqJjZuEEV6CLFYN6SUPBpfjMvKufpOvuOuVEEOTH4Uof/imrCxd0n3H4m8MbyubR7sl4jKEK9slEEXM+6xpBbORBxV9xS+Wjud1Gr7i1cdqFTJgFruBKhtRx5YAYa5b2LIMCFeop1XOwwDnbejkEEXhEarfeGwthw+46zp0OC0odys3uRSdgJnqA/E8gYXJbgII2CFP/zcu9gr9UdddgLteJFJoANDLG5MdDysLKHHyCA9dSIbFJYDt32xsEDQ+r5oZxR3EJdUwPJZjhpRk9G2ZmgpSrKZJET59Ovz8B6g/OREDBxJ2Hn5Phs6ZAwdWgzaAeieuvfCdHoExWLFJsKnQR/M574lirlIFk2ADbaElmRx8NNlXW5s1V8ZWPZpVyQ/kuk56iAVXSxxYUvipcb4xKdNGePKXjG3LpRb1G+ajV/KgpPFQ0am/XRuMHdMfoM9L8QF74sHKO6H3CJEzDNak+5rwY3fYTrOZKLSl+F6VmHWt446nNLxOPskhBYRrMkGpaOJGHp6PkmH8cJRHACoGq39bONdhsPdEg2wRkATC4NU0Y/yduTOODsNCyQn/aq3sH/FUYRgb6S/wgwNmn0jnexauQ+YsooxL/++0HFbB/3U7SWmlPdKWvxTtmhccIJTkZ5GEI5xFSERbCnKvmatbmWQHjOXGsWTb8whcJevlcwCVDBiqPo0irn+W0GRcTUJVffOdmUxuXqYvbmRirkgMICmzyUhjRI+GC3kpjH9MZ11yYEtMMWFuLaWlSYpP2A2w91HjYd1NKcNK97OO5VqttZQLp4hDZQJLIuqQ299aSVPhmODcMEcwWcBu5ddNHZa6c4N0Sogio2/sJPFFTokd2hFkbIIegvsZz4wClhoQdUZDaICPD8203+6PUq4qw88fNZ+omj/+fuLyUuo/1BecKpBHdWdvRWknDhWanFcbd7CXxN3j5wHlzB/QiwDtMf5Y+RsuprbrofHhD/nehQEeMGi1bf/8cyx2e8vWLiI2UkiaSSaxLDFN7HyPkQtGd7bH6RZ6fWqEEHoEj45CN62msP0eI+xSQ+jLSXTDZXLceyGSMEzeegrjLe9BUKpKgf821ayYuf9QWc8PS7lTYrNNln/s5/IR7cp7Qqsqx4zj+YwPVJosinqyQInCtF6W0six3P9m+7C70e3RCNNrQim8RUu+lJWE0ewyqB6FiVUU1DZ8xjttEGqjYuOXYxrzR6stIePNzCtaYhO23gzfE2zRlbAziNvU1Ww33Z2kKzzjVtMxF6D106fQkDY970/GDl7I3ds2e9QYvrt0f57QYrpoUre5hznsckNtloAg3mzLd520ez8J3LQKVKClewB27MWSLi1eVneRrNhZKeUgPt3jUYHmbtBmfUaq714LvcVPiiHpKyymY5sbvarnqf+78OE8OmkDwtuRPlI/whXacD3OU9u2v+PG7hEwbCa7qCSp+go0j/47BcYQfTdzEqwTeptDxOdQPMjLi4iV3EGU7ODk7WwXqr5Gnx2GS/REqqNmtk6zspYlcl+gFGSju5wlmtMZ/7VFwMVqMEymLz/2olA4/Jh8RZ8MPwDBp8RfaKD4Nff+5CUtvkgXaSVRVJ6opw771r1IuAkID/OCfM0QSwfYb9RPdICDhK5g9PnsSBv3fYKV190ecxs2ZedY+k6TzXIBjUMqtb351ktkPPG3tXTPFqXXMSK+bkecoaICk4t7kmRj9gijqDq5nYlFB3BMmAN/vW/uNiRpPIMJDoNtXP5VAR/cTeedZMTUXyAPyOk6c0uzmvd+1pPlhH3SHZeUwEQhNr2SOs5U5svDgMoOrtkk5xKJGYVSmnr1Wkhs9vktZq+3rp4DYJbib/GB1qlKjeiQWiI54aKN6oxOKOLHE2kEHgKcRao5oJxiiTkLYnIXgHilyConga4Qk9w2ELaYVcGCtNoFX3ENxU3je+wc4E0ic/52E5+01pLkKxqmuz1jIwc1ASscHYYGMirUSO46y/RZFzL5HPi7n7DdN4drYSdaneZGhIpYv/sg81m7T/I5AhQeOoxfaUynfTP5ZO+lYfARdWvTWynfuglZrF8/hkVtkDfXOd4PWCri4aVHGwghkfszaXB7l5035Igcjosp1xy3D7PZXV8I34bxQ+VeGkfTK+8yctBjyTV/mFqE30MoHIRS88jbLWm83tZJ1ecOisrXAM/6Xp9MxPdh880XEQeTKQ7iCxQydxbLODam3W/cihDcrhV562r+sZDVxNryjhxHLsbq2xTbn780o6l5hu0RC3eLu6zMH59VQQsUaJi0s7OrvW/xHMhsf1z7v96U8BJNcznzoKcRDfYL97ae8EWC7t7GqqRCi/xLW+95JGi3cE9Me/BoZpG3JoJTmejkMQV/kP0f1TDHQEznz68+yyivrSVpt9YG+Gx1B9JbieNqS4gyKVSUI10Fi4KYPGAQdd+QDrb/k8NyJCIFZ/DVFwHT5hzQZHH1RhKUU8l9JWVCKAO8Dh+smFfd9JVTGaznxyKwrLnZTYq5TXOX19H6qrunwGOJO/lIHZhIwKbaRP+EOjMnyx5lB8H4b5asaMWr2NV7bx2GBEDAmtIiAhhlN/OlLnYyMnUlCEvuQIGbodGitFQ/cXpDgUSjEql6shPpmsOtHSN2hK5i9OhXnzsY9H2ZvIfw5G3pgtHvA2C8GpNUFmsn7/3fPfVMd3iL+d+cccAg2KXeHlu2ADQkyNPIBGmTfs1R6/hXfBdVQxzXc+igljH02M/MYBJpDNhSgiEpAtLpwzxkqkDFIW4ZGQJxG8cfUBsiijonpE31GQpt7WRNgYLpK7evpeH1QE4wxG2h4ifcsg5CsJ8KNLSZsSxfTbgbVnnWBj/SQ6annYW9i7jM+u9iTt22Tg2w61MOTp+lDvzvhXiU3KpRPbrTY/Eu/nWi51I8eL4QRVIkXoF/u7by1CgLR9VL8ausj0wOPpGayxiMOLI24K++kIn5FxB8mGSYfaK1x4s9lpHGxqRHifsGQNOavOAK2pVBWKhECC74xYlNt1c9d48g8u//6f39D2ZYxQiGxueNfD2zqZiWNqLmRFNqlJEy7uRuLVjmJkUITRbBuXUCkjVcLtewjlAQwLbZDHWehjzSwZK28KnkDpo/B4OoitxgZBrqUe7NNwspAlrZC3WKVOKO6H7saD892CdwPwLjJVRlBkAGIpnFIZ7jy3smLHP70RUalX6Y/Evai1AAgIfaYB8lKau7V0ajwW+UgbRld9hcASjAPoRNfz8eeBEKCJ24vHkDTqlgVO/fAJf/L7QTPerukEhhNSLUML5sQWibidpHbG1cans1szSTW3XDix7rRYCFlKMvNZ7kVcLPIQVvrxiq7Lg6KLevNQv3jl/ayka1jCJggoTbERYIKoNqNmEq1soj1qpOLsJy064dPwam0j29dRT/aUbsDK+KN3jiWvv4ecf+at+F49z7TxyAhKt1++AUc0c0ME6niCEPQWYaxKlSLOdWKDe/9UOJ5AlVT/DetEoOeXXTy7tsb5hSoYsw1IkQk73iakDx8V/WHk/R9sdyRPATPDA973nfIkypq630gdK+X4PFdSLdieF3PfxG9jJ6aQZyov+mk09wLJkHDYgw+vhZ6XfBs0LoC7ZsYOjP3uj7OVdLpYlgE7xMXcKRP3VJzPcDeUjMcUqt8dIGdmGBNZC2hSeswI141+Wk8IcsXQ2uesw2mowmDEOc4AMHeWmyMQFJ63pfKIdFX2LaJELnSw/rBeJaHuIxhkdDtQhl8xAaYM6MxP7nz55e0oXVj0/FuJGZU1piB2W0yIpOSnwX87jl5z5XMmrvypcdo63bjKoc6Rqhx7vWbDgjtTp44NRyjC7suBlBedF6n1LGKBG/V7Xvo14aNti0+Ee9lB+o4V8pF8sPtyvBCdhbkCnw4MpMO+hR2KdqZxGZg4rcMIP8Yyqhw3UWqj8yrikThql15Mtuz1aPEHsrf5dZ4TU959UNIM83OeRxgrmfTWMyAHJ1cq5LJ/pYUO4475xl+8QaJcKCwMofAbyRsekwwOOsWD3gjyuZo36Ob4MxkX6R8lhgDzrh5juxY0ovzPB8FZGrUru+rtH4p5DOQEdbSZT4nFRWtbzeqseH8+VNNlnAfEzG9H9SHMzqh1u+vxobtpPuBHgTs+Ktc4pYxjw921jMxCBxHwL5R245MZ3nrQvqu47CIchW+i9Cj5S+3ESsrHdQtxqA16zN0z6ZXuiX6Nt6xyuZcOUV26k0nflFfPT1KhU+lbZLXFMcVPlL3KJ19wu6dU2Hiwmemr7qkDkqQDBJOP1tV21X9bk7mPKfhOqIJIqUk/AeL4X+FpGEn8y0wBlujA13TZpWuvO8c485B3uK923dV05l56HEXRRtCnkOVEHwsi1odAL6Fs8J1JhtxOeMQ+8El3NMX0+vY1LFBxde1okGQUW5q4Y6MzNyum4Vql0gR6rJmdmY8IFZupZ+u9L+Paz2Abvvyaoca2eYsXQLhmyyUHB+JkL26kxY/Siw7V4mxSC2+Ys2EwAo/80Tlv0tTRaRuQ==
+    configuration_id : 13469279537371253202
+    type : 1
+    generation_name : WD Ouverture Périphérique.exe
+    version :
+     version : VI200030B
+     internal_generation_version : 1
+     autoincrement_version : false
+    icon_filename : .\icone.ico
+    language : 1
+    new_features_help :
+     name : ""
+     internal_properties : CAAAAAgAAADQLEjw1QATVM4W2JG+GGcQmLSlvcwbAfaSWrmAktw/w6BZzhxG7vdVtvoTXGiYSK68DuCrVRITCQ85
+ elements :
+  identifier : 0x4ac5f818006a08cc
+  elements :
+   -
+     name : FEN_Liste
+     identifier : 0x48fd988f00000048
+     internal_properties : CAAAAAgAAADUsjx4Rzx0d8Bk2f29hdc0JGcTS3D52BdOz6k30HgcHCAuZS/lE4Q/rZcB/4d5AffBQQ==
+     physical_name : .\FEN_Liste.wdw
+     type : 2
+   -
+     name : CIconeAssocié
+     identifier : 0x48c52ef80004aa21
+     internal_properties : CAAAAAgAAACd+fWpFkPr9EPjWHw8BVARBVAsPL763tCwCZgU6VTGAg4SQ7FmkgW+LBaAeDioUECIiA==
+     physical_name : .\CIconeAssocie.wdc
+     type : 4
+   -
+     name : WinDevMessageBox
+     identifier : 0x45fc0f9200a7f6e1
+     internal_properties : CAAAAAgAAABo5lBMeyCIk1nKDZjjNRucUvGpccFStnpI5uMDs2yoUOh6C2s/+Vmm/iOdG5tVLaNt9Q==
+     physical_name : .\WinDevMessageBox_1.WDW
+     type : 2
+   -
+     name : TEST_Liste
+     identifier : 0x4acb02ad002d1084
+     internal_properties : CAAAAAgAAAANCWW5BnM7ZHMTCIzs1yRd9aTcdMRFrBm1HLMzER78NNxkEWO2QrXuHAbwyEi4QLAYGA==
+     physical_name : .\TEST_Liste.wxt
+     type : 17
+   -
+     name : FEN_Jauge
+     identifier : 0x48c5621700055d9b
+     internal_properties : CAAAAAgAAABo5lBMeyCIk1wwlanJtTMAkLPv59NUeQNwaGNLDxCMRPB+NU/ZZ9CL+SOdG5tVLaNt9Q==
+     physical_name : .\FEN_Jauge.wdw
+     type : 2
+   -
+     name : FEN_Principale
+     identifier : 0x48c51d8d0003a3b3
+     internal_properties : CAAAAAgAAAAVcX2hHnszbHvLMNSkUQjxfQhE5GHSB6d2YTzZ+BD6LsJeF+0++m0mRP74wECwSLgAAA==
+     physical_name : .\FEN_Principale.wdw
+     type : 2
+   -
+     name : WinDevDialogBox
+     identifier : 0x45fc0f9200aff7cb
+     internal_properties : CAAAAAgAAACwKUPSO0ngwCGOya0FRYtp5dkDnaaaX7P0YHavvM8ZZeVMgoDm7aFEp0+Mrck9Rw==
+     physical_name : .\WinDevDialogBox_1.WDW
+     type : 2
+   -
+     name : pGestionListe
+     identifier : 0x48c519f600029b3c
+     internal_properties : CAAAAAgAAADpZdE18q8HKDfHzMCw35jhCRhQGLGqyZVOC4KfKu4k9AQ8WSvyDnkyUMo0jBTMtCTsdA==
+     physical_name : .\pGestionListe.wdg
+     type : 7
+  other_elements : []
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - fr-FR
+ code_elements :
+  internal_properties : CAAAAAgAAADyta1ztdEgrYxL2OIfroDzF7WpTxHA43nOPaiO8dWw0Vx+ktT0kYY/W+5/dMYhNYy+qZVHZb8274tsI4CTf3ye4wZX+srPcRKhBS20
+  type_code : 0
+  p_codes :
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : WD Ouverture Périphérique
+     identifier : 0x4ac5f8180072091a
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

@@ -1,0 +1,181 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CIconeAssocié
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x3d89fa88359c2f25
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  internal_properties : CAAAAAgAAAAWQuSGpy/mzw5W/2A//R3KneDiGg3HX8DRJxQIX3ic6aslV8hFH2/veU/a76PYwx7apSHkv69jYNJnc+daXgogPdiElHZqhm/eptlX32XfKQLgYLWc2nqiaCM7i+2cCtc0444b9n6aKh94zoKUfAMxaPoPYz2QFnwuYlCQkWJucDiefJ1z7+H44G5UaDvtx/2Dhw==
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAADSnY540RadiAfGiy5+o8yrjyBFOSgxhKbNk687oaM+y/N4sG1BAQfnEnLTcYGeHyhz4Jujh9unnqWywMvttvV54k0QfYh8VerTs0DmwxZTG/i3yoOzA18l7d/dzLLl8HcUO1kN5T/4AUKrQw==
+     code : |1+
+      // Cette classe permet de connaitre l'icône du programme associé à un fichier
+      
+      // Définition d'un SHFILEINFO
+      SHFILEINFO est une structure
+      	hIcon est un entier
+      	iIcon est un entier sur 4 octets
+      	dwAttributes est un entier sur 8 octets
+      	szDisplayName est une chaîne ASCIIZ sur 255
+      	szTypeName est une chaîne ASCIIZ sur 80
+      FIN
+      
+      // Déclaration
+      CIconeAssocié est une classe
+      	// Membres
+      	m_shfi             est une SHFILEINFO 
+      	m_nHandleSansIcone est un entier
+      Fin
+      
+      constante
+      	FILE_ATTRIBUTE_ARCHIVE = 0x20
+      	FILE_ATTRIBUTE_COMPRESSED = 0x800
+      	FILE_ATTRIBUTE_DIRECTORY = 0x10
+      	FILE_ATTRIBUTE_HIDDEN = 0x2
+      	FILE_ATTRIBUTE_NORMAL = 0x0
+      	FILE_ATTRIBUTE_READONLY = 0x1
+      	FILE_ATTRIBUTE_SYSTEM = 0x4
+      	SHGFI_ATTRIBUTES = 0x800
+      	SHGFI_DISPLAYNAME = 0x200
+      	SHGFI_EXETYPE = 0x2000
+      	SHGFI_ICON = 0x100
+      	SHGFI_ICONLOCATION = 0x1000
+      	SHGFI_LARGEICON = 0x0
+      	SHGFI_LINKOVERLAY = 0x8000
+      	SHGFI_OPENICON = 0x2
+      	SHGFI_PIDL = 0x8
+      	SHGFI_SELECTED = 0x10000
+      	SHGFI_SHELLICONSIZE = 0x4
+      	SHGFI_SMALLICON = 0x1
+      	SHGFI_SYSICONINDEX = 0x4000
+      	SHGFI_TYPENAME = 0x400
+      	SHFI_USEFILEATTRIBUTES = 0x10
+      fin
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     internal_properties : CAAAAAgAAACOIak3ACtTLWQM4KVmStgKSoGoOFO26ngDGxfPiZ+Hy2zqZERfeLlCQb/zXX2RZlmQxgCEFy5v0rl9lVilEoHfSPIlsGL9Ue+IUvc/Ion7ajPqlYsxJ2CqnbbKbMMsVWONYChGuJGPpgNGM+3+G2kfBjzWyLCZ3SMT4H6ByefNkJyHpw22HlraLk8JYcOBT2DryaRH/N+n39O0A0a0Pul6
+     procedure_id : 4434350771744091988
+     type_code : 27
+     code : |1+
+      Procédure Constructeur()
+      
+      // Variable
+      sRepWindows est une chaine
+      
+      // Initialisation
+      sRepWindows = SysRep(srWindows)+"\system32\ping.exe"
+      
+      // Définition du handle correspondant aux fichiers sans icônes (utilisation de l'application ping.exe présente sur tous les windows comme référence des applications sans icônes)
+      :GetIcone(sRepWindows,"")
+      :m_nHandleSansIcone = :m_shfi:iIcon
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 4434350771726069588
+     type_code : 28
+     code : |1+
+      Procédure Destructeur()
+      
+     type : 655360
+   -
+     name : GetIcone
+     internal_properties : CAAAAAgAAABWVQppiYPepzbvDigtEr3AprLEaOdro3j8Cu4odE7PqX0bGCGD4t1sYgdR0PWPo3I9L3z/TUnlzgxzOepZ5tYdqeH+qB1F/o2rr+udldoKAnWz8ILsjyQU4ewugqSBxRzabjWF/oLlUzU8RUQokIJandtI72AthocAtU6qsDMjUVP5On6lufPnCi/NqHE9xkgbZWJyByfTaez7GqX/mA5JRPh9DljBRtq9ZYA4PBeH8ohnakoi1axs6Qbw1b5xCwdYEfhn5dBXl5OuKuh+yBXNhNfBPQ8Y0uwykq2UNzKu5QKjWlJRm5TSOBNAin2NI+YSCrWw9m6IhwvlRDNj0rpG/7O1s8uKzQ==
+     procedure_id : 4434350771793899348
+     type_code : 12
+     code : |1+
+      Procédure GetIcone(local psChemin est une chaine, local psChampImage, bAccepFichierSansIcone=Faux)
+      // psChemin est le chemin de l'objet dont on veut récupérer l'icone (peut être un fichier, un répertoire, un disque)
+      // psChampImage est l'image dans laquelle l'icone sera dessinée
+      
+      // si une URL web
+      si gauche(psChemin,4)="http" alors
+      	// on utilise un fichier HTML temporaire
+      	psChemin = fRépertoireTemp()+"http.html"
+      	fouvre(psChemin, focreation)
+      	
+      sinon
+      	
+      	// S'il ne s'agit pas d'un fichier sur disque avec chemin complet
+      	si fFichierExiste(psChemin) = faux alors
+      		
+      		// S'il s'agit d'un répertoire
+      		si fRépertoireExiste(psChemin) = vrai alors
+      			// on met le \ final
+      		 	psChemin = ComplèteRep(psChemin)
+      		
+      		sinon 
+      			// essayons avec les paths de WinDows
+      			sEnvironnement est une chaîne
+      			sRep est une chaîne
+      			i est un entier
+      			
+      			// on récupère la variable d'environnement
+      			sEnvironnement = SysEnvironnement("Path")
+      			sEnvironnement = ExtraitChaîne(sEnvironnement, 2, "=")
+      			
+      			// Parcours des répertoires
+      			i=1; sRep = ExtraitChaîne(sEnvironnement,i,";")
+      			TANTQUE sRep<>EOT ET sRep<>""
+      				si fFichierExiste(completerep(sRep)+psChemin)=vrai alors
+      					psChemin = completerep(sRep)+psChemin
+      					sortir
+      				fin				
+      				i++; sRep = ExtraitChaîne(sEnvironnement,i,";")
+      			FIN
+      		fin	
+      	FIN
+      fin
+      
+      // Interrogation de l'icône associée
+      API("Shell32", "SHGetFileInfo", psChemin, ::FILE_ATTRIBUTE_NORMAL, &:m_shfi, Dimension(:m_shfi), ::SHGFI_ICON)
+      
+      // Si c'est un fichier sans icone, on ne le prend pas
+      SI (:m_shfi:iIcon <> :m_nHandleSansIcone) OU (bAccepFichierSansIcone) ALORS
+      	si :m_shfi:hIcon <> 0 alors
+      		// Device Context du champ
+      		Si psChampImage <> "" ALORS
+      			nDC est un entier
+      			nDC = dDébutDessin(psChampImage,dEffacer)
+      			
+      			si nDC<>0 alors
+      				// Dessin de l'icône dans un champ image
+      				API("User32", "DrawIcon", nDC, 0, 0, :m_shfi:hIcon)
+      			sinon
+      				erreur(chaineconstruit(<§$0000§>,psChampImage), erreurinfo())	
+      			fin
+      		FIN
+      		
+      		RENVOYER Vrai
+      	SINON
+      		RENVOYER Faux
+      	FIN
+      SINON
+      	RENVOYER Faux
+      FIN
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3d6de48d467c66a6
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Erreur lors de la récupération du Device Context de %1
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

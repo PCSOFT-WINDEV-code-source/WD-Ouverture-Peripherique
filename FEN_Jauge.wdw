@@ -1,0 +1,190 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_Jauge
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_Jauge
+ identifier : 0x28c5621493035686
+ internal_properties : CAAAAAgAAACKytNLzOBTHiDEEBKijItWh64owh9A6CuU8Bq/GENQsBUMw8fgT+1hj/dQu0YSvzYVGLAuej1RvPnhXeZvLY5uALxn21SuShOpVjx1LhcPbAgMjabTQmSAZR1fRS+muMqGDDzX7Ytb0y4IO9/TZ6qqfPxBeFsM3ST38eGBCFHbwWo2JscGxZSIgZzXUAMd/rNljSj0eDKIfEG0JECQN3rx55yO1bjwAQr1qq4WBwdu6yWcrwqJIQtrQS5+hTzIW9zscUVZzKFnjJa2lJ8nIjM1hFSN/aaqUJtK8QQh3C555pWvp51or6VUDie7HSnZzqSmOu5bLgmV6M2jVuGJwATp78k36u/8+pJ1zjRDGJEqGcq/ljRBV53I18MFgFCo2tJ0vEPFruWSaLj7JdKRtzAYiVX7ELd0gDNmW4BtyUr6aQW1FiB1vG8pk+1svtKew1BnumT9dXHcwigktSwD9bQbPaPYBUie41TIsHa66dr5LoSGe6X4n7k5k5J2ex5xyJfKVZKH/FxqR/cqdol/RhUmqJcbZNHKat0XsSxr4k1LkMC5MdpzjRniIlwZ3vxYF+qgaInCowFdBU0WjyAle5SXtDDfkdQFgavZEUQOYdKxdyBYVKgYLTewDdy8d+wnv2xhIfV85UvkHvvS7oDE7CEukVVZMk133gsJH/v/gtjrP8YlZE65cQYBqs2ctgfj4z1QFCiVEYGddiYn3yFLLdG9voEkKUvMZKiC
+ properties :
+  width : 532
+  height : 135
+  widthClient : 526
+  heightClient : 129
+ controls :
+  -
+    name : LIB_Titre
+    identifier : 0x28c5627094fbbc5f
+    internal_properties : CAAAAAgAAACZpGZ8dCwCl+5s/JBbfdz/7139tZHlLtGrgUHkuGwYB9Ieo8dSGGlxPAVOLJGMQd8un7WN9+iAJYlk07cZfq9ts4/ZEGDcfIyqaKf2ZYel1Y74tmsfdZ/w9KFFALNV+qbsJIO7EaKOHOCl1/E7Vv6LfpYlo82QiHUGEvm3bGa3kapZ1q7pzA9r688/obtCAgHrpkHswpP+1KD7050XEOBuNVuDsaA6mIpLlg92wNJFCiHh9gaLWXr3IVziPSghqwC7fQmOQDwgvI8DNm4tlqr2jHEJ2aANg36X0bjp5/XFknYNuspVBiK7jogEZbd8UiQ/WaTzskO+A6ACBtuwJ9T21E7NPeXrYusTEB0NdcilkSZ4xKLTLu6l2WJiCPmgx+D76TBgx0lm12qMJHf3Qmm9uWFFouThl6tq6AX/jKpxqqg7URyvlM/SD/wCloQhQg1QwU2ltWgWOyZ1T7vesbq+Fg5acOHaG+numhbcqAvZrgpafnxea8+tq4s+Y1JLHJbVq9DqN9FLJKDajuPvGH9KBw9dfCB56PFAUbwE1Z6DLlmXTAQ8
+    properties :
+     x : 5
+     y : 4
+     width : 358
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : IMG_Programme
+    identifier : 0x28c5629298bf41ac
+    internal_properties : CAAAAAgAAABDrNgfc0x+CaCj+V+4rvzHdsWbxp0lOFHjHpDP1ZryYYeQriWJ3iTVu02nLj4FOvfDswp7zvV0S+sCIokjg5B1IxjnLBDzW2KWMtQhaqbCgfCnBGDDK6/DIwoMG1YwofF8AsjdpxiBu5I4OFmvIbB26PPLw3vURL+asG0q++AX1EoE0SlZEA8E9VvsCDYTPMbQ4aFd04IvHlBc0BrUrtqrGKrPY+JSRWlfwA/lkrOOgCiXz7iPRELidi0C6BqWvfoGSqsDWWhbjpj+Ks/5hY7RWrt0KjFFSq1X909GNGmYrGP8F1jq2Dz3LJ3zmYb0duoZ6l/P69dN412CAL07bnS6Z5HGxV0kQk/XJqc89hM0NJVGIbwPTdkIEk8pPPco+wVH5TiqKJ5seVPUUp+NdsNHMdrlZEUEa4WkfXequdDXurKtFG+OPOjhLMJgJ3EKvOB6on+cjI93OsRX1dYReb2kYWRHxh1E1gRqoIYrktJCOyvH5JlXzixyRwmX/jiOt+8FaIY5xeHypo3ZGI9FfNzSXIq492MzvHzuabEDCOd+gkefjRzfv4hhHh6CtZBahh9wUch5CFLaClxjqNKmeWEcffKjkIXSd6tVNvZzBddDGofTnyHx1RICzSoKzAAG9UsY3vEa4rr+DETSW+c1+qElH8EJ1HbBno96p47afurz40sw415V7GFabiHQfObTGfkz697h8rNdRIt7sjDps4x+HJl1psHPiXY6WNc1d2jFK9v8i1ZH8GMvT9qj4Ew2a6N7hPUfkshtlnjgnnF6UwU3hNa9cL+Wi20W2bMgBCik4KrTUJMjYCkN+LF9MLMt/XPwbBHLw6zMwlCApKHIelXoo4jn8AcBHkD0HYwB3Zk6z2XtVEibUeBAU9FjyNRNt0Wk7Dw/vjKFAZgI0O/MeHUpGy02MQ==
+    properties :
+     x : 6
+     y : 30
+     width : 35
+     height : 34
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : LIB_CheminProgramme
+    identifier : 0x28c562bc98efe649
+    internal_properties : CAAAAAgAAADrFDSttZ3Hn1r3lv4qxcKkIv2O6nqQ9m0oYRlheYK0siDAxVF7p7n1KijmfwQ0ffKvMWL0WSdvGNM5C9is5PgJIz7Soi0OyP+V2wjIdXy5is90Nl+Y8xVxUODDQGgZYgPfRL9BVkRkRWKSO3D8EHHJ8GVnLGXkbroWB+S0H6HocZiQVW3aiMUmoX5/UekA+MlxvnZoQToA493tQY8MsBSrIgYz4okUQ7SWS+Aeb6jsMyu3Ak+UAdJizNbY+orqrMhbs0GJwGSsUoZdMFTHrc3ps+jCtQKizV5PF1F1Slgvo32TNv0tsTCmED/Jfh99P7DVUGJVTLUfvVZn2UdTOOTdKAvUVOgFaszJnn9TOuXXSG1uPygO2gUmZh+eToeZ00zcg+249OPKL1UnfGTVyPToDRQxmo6FzRmH4dIeG8ikzJIhcopmJm2Ulh2HBycoMPbBRlL+hNpDb8FF2X94Xw==
+    properties :
+     x : 47
+     y : 41
+     width : 464
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : IMG_Memoire
+    identifier : 0x28c62b671031c31c
+    internal_properties : CAAAAAgAAACapD44NhmSblcOt6ZLsMFqHgtGXbdgz8bH/5eRZJabQTC6tLN1o+gbzrIOj8JaOi2d87xgb1dLj4gmRfau5oUdhWgvUNRW3EnjPL/WlAKZgul/xSmPi0ZU6IJpcBOCXPimq7OShJFT0gJ61N7iTYlkRNemsM3WCtPg+jlNxUMTCzWru4aDdA/cn916CtftRLk2Wr/bBu8nVQM3/16tQwl4xGs7Z05hoKSlqginrRDj2P2IW1OYNoWpJhbYpqJ1pyzp6BykLg+Pjy/Ak9/jMB47+RuWwmh+CLooulGfak7ulqD8ZlDCB+9o9SSf1G/4mvr5SayKMA58gO8mfqHlDfntOXfQBphr9jm75WB3TKhg5edW0E4vt9o68pVxwDRuZqELJnuNuNZAh6qSzfvFyjGsqFbRVbAIr+UDxIJJNuaiVn1XUkmJq7B8tMHgOpCwa32Dr/kithpv2X77bOwAOmhoGQA6cPbOLzQu2gpZ6xChtW9Jk8BhoHlgRhdL5D0TRCBmOYpXFE+Mmii2wIWZCMbWdgVB6o2S4c+A850z+XYplq5ho6peMwFyNKsXJh/jaUGXhIO8/Xu5xHH9sGncu3d9n+Q5h1YXQwqsrR5lr7uYc0Uzm4Ca97sKTvF0NulHUdm0Udk8o+pfDcL50yL90J4jn0ciXKGryQnnd98GTUXp2Cz6/Xz/3Y3Z1ebS6rbr4JTAX+JKqKC3ROiAxYkHqrrkylmpDl9u69ZDHooRguXmik4csqibYoD6jSoyx9d5rnFXlC8eYvEa04pA3ewlVI1ilHR055UK7S4XdPGk+86J83/W85zpYp3NcEYGtpaTIAXMNYBlIn0wclLf6WTAu/CSqXDUqrdNu9KPjZk=
+    properties :
+     x : 1
+     y : 138
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : LIB_Explication
+    identifier : 0x28ff59e407c4226f
+    internal_properties : CAAAAAgAAAC7TQxJvyv2YKmsDd2amn/CmeTVZfqUQpT2ynCt23m7YZWioeGe/btHGO3VqoLvCiazXEOSF7sJLOxnNmAE8jO4fUohX1o3pF8q9x2CNsF2JL3IVKyNIRYnFg4FeI3BwIEXbCeBB7SsBO+sdsZckj2yaamCT46sVPU75/kvForyE+J2JrUQqEjEyb0xmaa765km+KJZTirnS9CGSVDSn2v8pKqx2Dpqbn/k+TqRtlO5UOZG05KQrJVJTFfEffCWhkqE5ywsGWvaRqdd3J6yW/E6+ENFumgJbm5DlM8Q5BJBNi0LiRTfgsrr3EGXZ69D6N87+w1CAHABEnYWw+YDLR/1DN8CQRvyxzAJ2Vhu8jn2sipKB6WRuLzYdeabhg8YdG/wOdK8Knw+ZFRLC6nljAkiIiWRZseeVgrJu2K4S8hVfhCV+cYMrSLFWtjziqYncjvKIXw715Ftrm/Ty8fyNzR7jHeSezjgwXBlzvdYzZKizema1LJgRCZo1Lpl99utXNtf6ouEjacd33Ielc0QqNjC/DdnFLl4N5Amc/pVssgLsHmLhe8B57qYEVePNqEEPdO9zemEZ9h5PAnxuNaGS5UKTPNEI3PUcqeHYLvovNnpexHoyJmvOtqMRI+Sp+HWpP8mulv8wKT2HQh0kjCVPNi+u2tSlQLG8ehX0SyANZilDX/PdgC7zCjlq3ZCxCA=
+    properties :
+     x : 1
+     y : 89
+     width : 524
+     height : 34
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x28c5621493055686
+  internal_properties : CAAAAAgAAADAfZ27Q+jJ/MBXHLGCb7PyE2Yqjvuo9mAX2ZN+LLuyQtzms1431znXR0sNCCeLESXZp1gqmo+m2mUhb2ELR2phZ8VOgUSyXddfQyxpxffipvH/iiFuFkCLgpjx1Ah9/9/ndeRpWb0s9Qcjy8oPtW3aMcRtuglgDe5Ch9/jnC/Drp19/hhf+qz96diLw5T0yWlzg33c/E8hhMwUBdSOV69/8iDQGLfTvLoTvV3YkiQ5Dce7dxB2gUx1AVvVTykQMm7G+0haIOV568KMGgPEJluRN2XjgQ11Tb8vVxt6P2g=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAADB+bkYP8ywDXlwjM4Yua3oSlTinv9MoEjuo9t9LeRecJ7bI4TmA0M8co1kyXIk3YW6d07UwGqQY0gpwbPY9ls8/FVKHA/8xkBZxI8+6c7tsUUVUGKXIFGokM1/IVF0
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAAD6/c0tBl5Fzb2NpSCbxdnsVST5pc+rMXi+MT1lx+K4u+jvGiXm+lK52DkW3oh7HEervP0I3alSdNmFS6fAcz+9uCaFfg==
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACrjc2Vo5nnxtHat7jk7y5/+QuO/FY3pzOhWPM+eFVJUUtegCANqt2R0plvZnTKw7zJPLjk5gqleQEQuyzBn2uHLsbnCtrXB0lrJdXDL3lNVdROFx6zavmY2/uIY0CoCPPyrnI4V9d943P2F0w=
+     code : |1-
+      
+      CONSTANTE
+      	FILTRE_Exe = "*.exe"
+      FIN
+   -
+     code : |1-
+      
+      // Remplissage du tableau de la liste des applications
+      sPath   est une chaine
+      
+      // Initialisation
+      sPath = SysRep(srProgramFiles) + ["\"] + FILTRE_Exe
+      
+      // Chargement des fichiers exécutables
+      fListeFichier(sPath, "AjouterProgramme",frRécursif+frInterruptible)
+      
+      // Triage par ordre alphabétique croissant et sélection de la première application
+      ZoneRépétéeTrie("+FEN_Principale.ZR_Application.ATT_Application")
+      ZoneRépétéeSelectPlus(FEN_Principale.ZR_Application,1)
+      ExécuteTraitement(FEN_Principale.ZR_Application,trtSélection)
+      
+      Ferme(FEN_Jauge)
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : AjouterProgramme
+     internal_properties : CAAAAAgAAADVuenCZZCwQ6nZNuB8MhQA5bonutl/dGqRR5Dp6YntkwE2rdcDlg9PE8yTEaguuliUr+jW4UqBl33AAqGXHBJ8k8N40rFWrvFmyG9c9usuxlbDUr6xDwnaTAKlJoRogVanhdcu8rhTASKRNnjwalbCULi8mVJ2eB1i2Eho9Y7IjZMoYBCKvqo1GQG81uOolMSJ5Ab3y3p+oBYukH2VqVMVExZ0rGZ9+zKhgi7uVwvFFyrF365sjoSg6XmyE2lRbOE7uf4FKVOYdGiCtBV63bGMiCKGIkdcGgyF8J748mPwxoCE
+     procedure_id : 1800748412754236258
+     type_code : 14
+     code : |1-
+      // Résumé : Callback appellée automatiquement lors du listing des fichiers
+      // Syntaxe :
+      //AjouterProgramme (<Chemin>, <Nom>, <Change>, <Pointeur>)
+      //
+      // Paramètres :
+      // 	Chemin : <indiquez ici le rôle de Chemin>
+      // 	Nom : <indiquez ici le rôle de Nom>
+      // 	Change : <indiquez ici le rôle de Change>
+      // 	Pointeur : <indiquez ici le rôle de Pointeur>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      Procédure AjouterProgramme(Chemin, Nom, Change, Pointeur)
+      
+      // Variable
+      clIcone est un CIconeAssocié
+      
+      // Chemin du programme
+      LIB_CheminProgramme = Chemin+Nom
+      
+      // Récupération de l'icône associé
+      SI clIcone:GetIcone(Chemin+Nom,IMG_Memoire..Nom) ALORS
+      	// Insertion dans la zone répétée
+      	ZoneRépétéeAjouteLigne(FEN_Principale.ZR_Application,dSauveImagePNG(IMG_Memoire,enMémoire),fExtraitChemin(Chemin+Nom,fFichier),Chemin+Nom)
+      	
+      	dFinDessin(IMG_Memoire)
+      FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : ActivVISTA_0_D_10_43_07__02_11_2005
+resources :
+ string_res :
+  identifier : 0x1fc4eecd02f79ec6
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
